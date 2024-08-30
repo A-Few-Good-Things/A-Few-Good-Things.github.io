@@ -1,1 +1,2 @@
-# A-Few-Good-Things.github.io
+# wawawebsite
+Repository containing all files for WAWA Website
