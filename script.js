@@ -115,6 +115,24 @@ Thank you for being part of this journey with us. We can't wait to help you disc
 
 document.getElementById('traveller_email-form').addEventListener('submit', saveTravellerData);
 
+document.addEventListener('DOMContentLoaded', function () {
+  // This function handles the smooth scroll to sections
+  function smoothScroll(event) {
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute('href') === '#' ? 'header' : event.currentTarget.getAttribute('href');
+    const targetPosition = document.querySelector(targetId).offsetTop;
+
+    window.scrollTo({
+      top: targetPosition, // Scrolls to the top of the target section
+      behavior: 'smooth'  // Ensures the scroll is smooth
+    });
+  }
+  const navLinks = document.querySelectorAll('.navigation-item .w-nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', smoothScroll);
+  });
+});
+
 /*!
  * Webflow: Front-end site library
  * @license MIT
@@ -529,7 +547,11 @@ document.getElementById('traveller_email-form').addEventListener('submit', saveT
               "string" != typeof a2 && (a2 = "block"), this.el.style.display = a2;
             }
             function o2() {
-              l2.call(this), this.el.style.display = "none";
+              if (!this.el.classList.contains('menu-button')) {
+                l2.call(this), this.el.style.display = "none";
+            }
+             
+
             }
             function p2() {
               this.el.offsetHeight;
@@ -2041,7 +2063,9 @@ document.getElementById('traveller_email-form').addEventListener('submit', saveT
             if (!add && !exists) {
               return;
             }
-            add ? $elem.addClass(className) : $elem.removeClass(className);
+            if (!($elem.hasClass('menu-button'))) {
+              add ? $elem.addClass(className) : $elem.removeClass(className);
+          }
           }
           return api;
         });
