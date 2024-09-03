@@ -20,6 +20,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+// Initialize email.js
+emailjs.init("3ifSjQB6zU_I-n61d");
+
 function saveInstructorData() {
   const firstName = document.getElementsByName('first-name1')[0].value;
   const lastName = document.getElementsByName('last-name1')[0].value;
