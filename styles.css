@@ -4388,6 +4388,12 @@ html {
   
   @media screen and (max-width: 479px) {
 
+    .menu {
+      width: 479px;
+      height: 20px;
+      overflow: hidden; 
+    }
+    
     .contact-heading {
       font-family: Quicksand;
       font-size: 30px;
