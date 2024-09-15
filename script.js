@@ -21,7 +21,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // Initialize email.js
-emailjs.init("3ifSjQB6zU_I-n61d");
+emailjs.init("qP1fsAN9-O2bEj4I3"); // API key
 
 function saveInstructorData() {
   const firstName = document.getElementsByName('first-name1')[0].value;
