@@ -56,7 +56,7 @@ Thank you for joining us at this exciting stage. Together, we’ll inspire and e
 Looking forward to an adventurous journey ahead!`
       };
 
-      emailjs.send("service_0ef586f","template_hgj7dmq", emailParams)
+      emailjs.send("service_q7p3jbb","template_hqnld9a", emailParams)
         .then(function(response) {
             console.log('Email sent successfully!', response.status, response.text);
         }, function(error) {
