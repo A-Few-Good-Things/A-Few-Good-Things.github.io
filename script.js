@@ -21,7 +21,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // Initialize email.js
-emailjs.init("3ifSjQB6zU_I-n61d");
+emailjs.init("qP1fsAN9-O2bEj4I3"); // API key
 
 function saveInstructorData() {
   const firstName = document.getElementsByName('first-name1')[0].value;
@@ -56,7 +56,7 @@ Thank you for joining us at this exciting stage. Together, we’ll inspire and e
 Looking forward to an adventurous journey ahead!`
       };
 
-      emailjs.send("service_q7p3jbb","template_hgj7dmq", emailParams)
+      emailjs.send("service_q7p3jbb","template_hqnld9a", emailParams)
         .then(function(response) {
             console.log('Email sent successfully!', response.status, response.text);
         }, function(error) {

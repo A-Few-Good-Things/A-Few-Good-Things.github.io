@@ -3208,7 +3208,7 @@ html {
   
   .clock-number {
     color: #fff;
-    font-size: 6rem;
+    font-size: 7vw;
     font-weight: 600;
     line-height: 70px;
   }
@@ -4388,6 +4388,17 @@ html {
   
   @media screen and (max-width: 479px) {
 
+    .menu {
+      width: 479px;
+      height: 20px; 
+      overflow: hidden;
+    }
+    
+    .menu-button {
+      margin-right: 50px; 
+      overflow: visible;
+    }
+
     .contact-heading {
       font-family: Quicksand;
       font-size: 30px;
@@ -4469,9 +4480,9 @@ html {
       position: fixed;
       top: 0;
       margin-top: 20px;
-      margin-left: 80px;
-      width: 50px; 
-      height: 50px; 
+      margin-left: -20px;
+      width: 60px; 
+      height: 60px; 
       padding: 10px;
     }
   
@@ -4533,7 +4544,7 @@ html {
     }
   
     .js-clock {
-      flex-wrap: wrap;
+      flex-wrap: none;
     }
   
     .box {
