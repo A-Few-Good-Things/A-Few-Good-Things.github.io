@@ -103,7 +103,7 @@ Stay tuned for exclusive updates, early access to bookings, and special pre-laun
 Thank you for being part of this journey with us. We can't wait to help you discover your next adventure!`
       };
 
-      emailjs.send("service_0ef586f","template_hgj7dmq", emailParams)
+      emailjs.send("service_q7p3jbb","template_hgj7dmq", emailParams)
         .then(function(response) {
             console.log('Email sent successfully!', response.status, response.text);
         }, function(error) {
