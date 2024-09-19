@@ -4114,7 +4114,7 @@ document.addEventListener('DOMContentLoaded', function () {
    */
 
 // countdown  
-var countDownDate = new Date("Oct 1, 2024 23:59:59").getTime();  
+var countDownDate = new Date("Oct 9, 2024 23:59:59").getTime();  
 
 var x = setInterval(function() {
 
